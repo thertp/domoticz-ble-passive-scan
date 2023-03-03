@@ -1,0 +1,31 @@
+[project]
+name = "domoticz-ble-passive-scan"
+version = "0.0.1"
+description = "Bluetooth LE sensor scanner for domoticz"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "COPYING.txt"}
+authors = [
+  {name = "Arnaud Patard", email = "arnaud.patard@rtp-net.org"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+# Actually, ble scanning has been added in 0.15 but only bleak 0.19
+# has been tests
+dependencies = [
+  "bleak>=0.19.0",
+  "PyYAML",
+  "requests"
+]
+[project.urls]
+homepage = "https://github.com/thertp/domoticz-ble-passive-scan.git"
+repository = "https://github.com/thertp/domoticz-ble-passive-scan.git"
+
+[tool.setuptools]
+script-files = ["scan_ble"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

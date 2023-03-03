@@ -1,0 +1,4 @@
+dist
+domoticz_ble_passive_scan.egg-info
+*.swp
+*.backup

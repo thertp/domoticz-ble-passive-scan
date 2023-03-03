@@ -1,0 +1,18 @@
+---
+adapter: hci0
+# time in seconds between 2 scans
+sleep: 1
+# time between domoticz update
+ratelimit: 300
+# loglevel
+loglevel: info
+# domoticz access
+domoticz:
+  hostname: 'domoticz.localdomain:8080'
+  ssl: true
+  login: admin
+  password: admin
+# bluetooth sensor MAC and domoticz idx.
+sensors:
+- 'address': '00:11:22:33:44:55'
+  'idx': '1234'
